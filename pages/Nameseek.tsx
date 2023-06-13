@@ -546,7 +546,7 @@ export default function Nameseek() {
           </div>
   
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form className="space-y-6" action="#" method="POST" onSubmit={handleNFTSubmit}>
+            <form className="space-y-6" action="#" method="POST" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-500">
                   Email address
@@ -609,18 +609,18 @@ export default function Nameseek() {
               </div>
             </form>
           </div>
-            {/* {signedApiKey && (
+            {signedApiKey && (
             <div className="mt-14 mx-[15%] p-2 rounded-md border border-blue-200 bg-white">
                 <h2 className="text-lg text-center font-bold mb-2 text-blue-800">Your Signed API Key:</h2>
                 <p className="text-sm text-center text-gray-600">{signedApiKey}</p>
             </div>
-            )} */}
-            {nftAddress&&(
+            )}
+            {/* {nftAddress&&(
                 <div className="mt-14 mx-[30%] p-2 rounded-md border border-blue-200 bg-white">
                     <h2 className="text-lg text-center font-bold mb-2 text-blue-800">Your API Key:</h2>
                     <p className="text-sm text-center text-gray-600">{nftAddress}{nftTokenId}</p>
                 </div>
-            )}
+            )} */}
         </div>
       </>
     )
